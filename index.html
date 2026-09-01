@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>康迦智 ｜ 台灣學園傳道會 受訓同工</title>
+    
+    <!-- 社群分享預覽設定 (Open Graph) 用於 LINE, FB 分享 -->
+    <meta property="og:title" content="康迦智 ｜ 台灣學園傳道會 受訓同工">
+    <meta property="og:description" content="點燃校園的微光，成就大使命的盼望。邀請您，用禱告與奉獻與我並肩同行，見證生命的翻轉。">
+    <meta property="og:image" content="80644.jpg">
+    <meta property="og:type" content="website">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +44,17 @@
                             700: '#374151',
                             800: '#1f2937',
                         }
+                    },
+                    keyframes: {
+                        wave: {
+                            '0%': { transform: 'translateX(0)' },
+                            '50%': { transform: 'translateX(-25%)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    },
+                    animation: {
+                        'wave-slow': 'wave 8s linear infinite',
+                        'wave-fast': 'wave 4s linear infinite',
                     }
                 }
             }
@@ -52,13 +70,12 @@
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-gray-800 flex items-center gap-2 group">
-                <img src="80632.jpg" onerror="this.src='https://ui-avatars.com/api/?name=迦&background=f97316&color=fff'" alt="JESUS King of Kings Logo" class="w-8 h-8 rounded-full object-cover border border-gray-200 group-hover:ring-2 ring-brand-500 transition-all">
+                <img src="80644.jpg" onerror="this.src='https://ui-avatars.com/api/?name=迦&background=f97316&color=fff'" alt="JESUS King of Kings Logo" class="w-8 h-8 rounded-full object-cover border border-gray-200 group-hover:ring-2 ring-brand-500 transition-all">
                 康迦智
             </a>
             <div class="hidden lg:flex space-x-6 text-sm font-medium text-gray-600">
                 <a href="#about" class="hover:text-brand-600 transition-colors">關於我</a>
                 <a href="#focus" class="hover:text-brand-600 transition-colors">事奉焦點</a>
-                <a href="#special-topics" class="hover:text-brand-600 transition-colors">事工專題</a>
                 <a href="#gallery" class="hover:text-brand-600 transition-colors">事工紀實</a>
                 <a href="#newsletters" class="hover:text-brand-600 transition-colors">代禱信</a>
                 <a href="#financial" class="hover:text-brand-600 transition-colors">財務需求</a>
@@ -154,6 +171,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
                 <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col h-full">
                     <div class="w-14 h-14 bg-brand-100 rounded-2xl flex items-center justify-center text-brand-600 mb-6">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
@@ -189,47 +207,6 @@
         </div>
     </section>
 
-    <!-- Special Topics Section (事工專題 - 新增) -->
-    <section id="special-topics" class="py-20 px-6 bg-white border-t border-gray-100">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">事工專題</h2>
-                <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full"></div>
-                <p class="mt-6 text-gray-600">深入探討校園現場的挑戰，與您分享真實的信仰反思。</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Topic 1 (5月代禱信專題) -->
-                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="四塊田.PNG" onerror="this.src='https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="教會倍增運動" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <span class="text-xs font-bold text-brand-600 bg-brand-100 px-3 py-1 rounded-full w-fit mb-4">5月專題 ｜ 門徒訓練</span>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">教會倍增運動 (MC²)：從理論到生命火熱的實踐</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-6 text-justify flex-grow">
-                            教會倍增運動不僅是一套事工哲理，更是幫助初信者扎根聖經的利器。在近期的研討中我深刻反思，華人教會容易落入「偏重神學知識」的框架，卻缺乏行道的熱情。真正的倍增，需要用愛與行動來推動，這提醒著我不能僅靠理智服事，更要求神調整我的心，學習用真實的火熱建立生命連結。
-                        </p> 
-                    </div>
-                </div>
-
-                <!-- Topic 2 (4月代禱信專題) -->
-                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
-                    <div class="aspect-video overflow-hidden relative">
-                        <img src="e148eda4-89a8-4379-b502-7127ab7cc0d4_01567de4-8c1e-46dd-8f3d-ffaaa6e385b0_encrypted.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="東京短宣" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <span class="text-xs font-bold text-brand-600 bg-brand-100 px-3 py-1 rounded-full w-fit mb-4">4月專題 ｜ 跨文化宣教</span>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">2026 日本東京短宣：跨越國界的福音呼召</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-6 text-justify flex-grow">
-                            從青澀的參與者到如今帶隊，短宣對我而言是生命擴張的旅程。今年 8 月，我們將再次前往東京日暮里國際教會，關懷在日華人社青。面對日本極低的基督徒比例，我們期盼透過線上佈道訓練與實體關懷，裝備青年成為職場屬靈領袖。願我們存樂意的心，與當地教會並肩作戰！
-                        </p>       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Ministry Gallery Section (事工照片) -->
     <section id="gallery" class="py-20 px-6 bg-gray-50 border-t border-gray-100">
         <div class="max-w-5xl mx-auto">
@@ -240,39 +217,52 @@
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative">
-                    <img src="79235_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1523580494112-071d4581a59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="跨機構參訪交流" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <span class="text-white font-medium text-sm drop-shadow-md">跨機構參訪交流</span>
-                    </div>
-                </div>
+                <!-- 圖1: 長庚星光教會聚會 -->
                 <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-gray-100 p-2 flex items-center justify-center">
                     <img src="68435.jpg" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="長庚星光教會聚會" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                         <span class="text-white font-medium text-sm drop-shadow-md">長庚星光教會聚會</span>
                     </div>
                 </div>
-                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative">
-                    <img src="4194.jpg" onerror="this.src='https://images.unsplash.com/photo-1529070538774-1843cb1665e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="醒吾科大教職員禱告會" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <span class="text-white font-medium text-sm drop-shadow-md">醒吾科大教職員禱告會</span>
+
+                <!-- 圖2: 新約概論結業照 (替換為 88934_3.jpg) -->
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-gray-100 p-2 flex items-center justify-center">
+                    <img src="88934_3.jpg" onerror="this.src='https://images.unsplash.com/photo-1523580494112-071d4581a59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="新約概論結業照" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
+                        <span class="text-white font-medium text-sm drop-shadow-md">新約概論結業照</span>
                     </div>
                 </div>
+
+                <!-- 圖3: 系統神學結業照 (替換為 S__43384840_0_3.jpg) -->
                 <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-gray-100 p-2 flex items-center justify-center">
-                    <img src="7f090176.jpeg.png" onerror="this.src='https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="南台中線上結訓合影" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    <img src="S__43384840_0_3.jpg" onerror="this.src='https://images.unsplash.com/photo-1529070538774-1843cb1665e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="系統神學結業照" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
+                        <span class="text-white font-medium text-sm drop-shadow-md">系統神學結業照</span>
+                    </div>
+                </div>
+
+                <!-- 圖4: 長庚大學校園走禱 -->
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-gray-100 p-2 flex items-center justify-center">
+                    <img src="83332.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="長庚大學校園走禱" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
+                        <span class="text-white font-medium text-sm drop-shadow-md">長庚大學校園走禱</span>
+                    </div>
+                </div>
+                
+                <!-- 圖5: 南台中線上結訓合影 (替換為 42_4.jpg) -->
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-gray-100 p-2 flex items-center justify-center">
+                    <img src="42_4.jpg" onerror="this.src='https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="南台中線上結訓合影" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                         <span class="text-white font-medium text-sm drop-shadow-md">南台中線上結訓合影</span>
                     </div>
                 </div>
-                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative">
+
+                <!-- 圖6: 2026畢定會合影 -->
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-gray-100 p-2 flex items-center justify-center">
                     <img src="83869.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="2026畢定會合影" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 pointer-events-none">
                         <span class="text-white font-medium text-sm drop-shadow-md">2026畢定會「Re:心曠之旅」</span>
                     </div>
-                </div>
-                <div class="aspect-square rounded-2xl overflow-hidden shadow-sm group relative bg-brand-50 flex items-center justify-center flex-col text-brand-400 hover:text-brand-600 transition-colors cursor-pointer border-2 border-dashed border-brand-200 hover:border-brand-400">
-                    <svg class="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-                    <span class="text-sm font-medium">更多精彩故事即將發生</span>
                 </div>
             </div>
         </div>
@@ -287,51 +277,93 @@
                 <p class="mt-6 text-gray-600">邀請您透過閱讀，參與在我的每一段屬靈旅程中。</p>
             </div>
 
-            <!-- Last 3 Months Group (反轉順序：5 -> 6 -> 7) -->
+            <!-- Last 3 Months Group (順序：8月 -> 7月 -> 6月) -->
             <div>
                 <h3 class="text-xl md:text-2xl font-bold text-brand-600 mb-8 flex items-center gap-4">
                     近三個月動態 <span class="flex-grow h-px bg-gray-200"></span>
                 </h3>
                 <div class="space-y-8 pl-4 md:pl-8 border-l-2 border-brand-200 ml-2 md:ml-0">
                     
-                    <!-- Month 1 (原5月 - 調整為最上) -->
+                    <!-- Month 1 (8月 - 最新) -->
                     <div class="relative">
-                        <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-300 ring-4 ring-white"></div>
-                        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-500 ring-4 ring-white shadow-sm border border-white"></div>
+                        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border-2 border-brand-100 hover:shadow-lg transition-shadow">
+                            <!-- New Badge -->
+                            <div class="absolute -top-3 -right-3 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md animate-pulse">NEW</div>
+                            
                             <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
-                                <h4 class="text-lg font-bold text-gray-800">五月：【連結與反思】跨界宣教與點燃生命之火</h4>
-                                <span class="text-sm font-medium text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-fit">2026.05</span>
+                                <h4 class="text-lg font-bold text-gray-800">八月：【恩典滿溢】神學裝備與風雨無阻的日本短宣</h4>
+                                <span class="text-sm font-medium text-brand-600 bg-brand-100 px-3 py-1 rounded-full w-fit">2026.08</span>
                             </div>
                             <p class="text-gray-600 mb-6 leading-relaxed text-justify">
-                                這個月我們在長庚大學與美國宣教士夫婦建立了美好的同工關係，透過英文角落拓展福音接觸面。我也走訪了多間在地教會與機構，深刻體會到「教會倍增（MC²）」的關鍵不僅在於神學知識，更在於真實相愛與行道的熱情。求主持續調整我的眼光，讓我能用基督的愛去建立有溫度的生命連結。
+                                這個月充滿挑戰與恩典！我參與了密集的聖經課程，在華神美雅姐幽默生動的教導下，深奧的系統神學變得有趣，甚至用網路迷因發表報告獲得肯定。緊接著，在颱風天出發的日本短宣經歷了神奇的平靜，我們接觸了許多社青與孩子。在《台灣之夜》佈道會上，我首次上台分享信息並帶領決志，更看見慕道友世隆因著信仰前輩的見證而決志信主，這一切讓我更深體會神的大能與慈愛。
                             </p>
-                            <!-- 5月照片區塊 -->
+                            <!-- 8月照片區塊：一欄三張 -->
                             <div class="grid grid-cols-3 gap-3 md:gap-4">
                                 <div class="flex flex-col gap-2">
                                     <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="聚會.jpg" onerror="this.src='https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="五月紀實照片1" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        <img src="88941.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="《台灣之夜》講信息" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                                     </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">與美國宣教士交流</p>
+                                    <p class="text-xs text-gray-500 text-center font-medium">《台灣之夜》講信息</p>
                                 </div>
                                 <div class="flex flex-col gap-2">
                                     <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="S__119693318.jpg" onerror="this.src='https://images.unsplash.com/photo-1544928147-79a2dbc1f389?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="五月紀實照片2" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        <img src="88935_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="與慕道友世隆合影" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                                     </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">參訪聖公會聖多馬堂</p>
+                                    <p class="text-xs text-gray-500 text-center font-medium">與慕道友世隆(右)合影</p>
                                 </div>
+                                <!-- 取消翻轉效果 (移除 scale-x-[-1]) -->
                                 <div class="flex flex-col gap-2">
                                     <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="PPT3.PNG" onerror="this.src='https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="五月紀實照片3" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        <img src="88938_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="短宣隊成員大合照" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                                     </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">MC² 教會倍增研討</p>
+                                    <p class="text-xs text-gray-500 text-center font-medium">短宣隊成員大合照</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Month 2 (原6月 - 維持中間) -->
+                    <!-- Month 2 (7月) -->
                     <div class="relative">
                         <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-400 ring-4 ring-white"></div>
+                        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
+                                <h4 class="text-lg font-bold text-gray-800">七月：【異象傳承】從校園走禱到裝備扎根</h4>
+                                <span class="text-sm font-medium text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-fit">2026.07</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 leading-relaxed text-justify">
+                                本月我與偉斌哥前往長庚大學走禱，看見老師們對校園福音工作的正面回應，雖然困難仍在，但盼望不減。此外，與南台中基督徒聚會處的植堂訓練順利結訓，牧者謙卑的榜樣激勵了我。七月下旬參加了「畢定會」傳承異象，並開始「國際聖經課程（EAST）」的裝備，同時日本短宣的籌備也進入最後倒數，求主保守我們前行的腳步！
+                            </p>
+                            <!-- 7月照片區塊：修復排列與顯示 -->
+                            <div class="grid grid-cols-3 gap-3 md:gap-4">
+                                <!-- 圖1: 長庚走禱 -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
+                                        <img src="83332.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="長庚大學校園走禱" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                    </div>
+                                    <p class="text-xs text-gray-500 text-center font-medium">長庚大學校園走禱</p>
+                                </div>
+                                <!-- 圖2: 課前選書 (系統神學_2.jpg) -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
+                                        <img src="系統神學_2.jpg" onerror="this.src='https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="課前選書：系統神學" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                    </div>
+                                    <p class="text-xs text-gray-500 text-center font-medium">課前選書：系統神學</p>
+                                </div>
+                                <!-- 圖3: 東京短宣籌備會 (截圖 2026-06-14 晚上9.03.38.jpg) -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
+                                        <img src="截圖%202026-06-14%20晚上9.03.38.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="東京短宣線上籌備會" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                    </div>
+                                    <p class="text-xs text-gray-500 text-center font-medium">東京短宣線上籌備會</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Month 3 (6月) -->
+                    <div class="relative">
+                        <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-300 ring-4 ring-white"></div>
                         <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                             <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
                                 <h4 class="text-lg font-bold text-gray-800">六月：【操練與跨越】身心靈的重塑與擴張</h4>
@@ -359,44 +391,6 @@
                                         <img src="79238_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1523580494112-071d4581a59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="六月紀實照片3" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                                     </div>
                                     <p class="text-xs text-gray-500 text-center font-medium">拜訪馬禮遜美國學校</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Month 3 (原7月 - 最新) -->
-                    <div class="relative">
-                        <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-500 ring-4 ring-white shadow-sm border border-white"></div>
-                        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border-2 border-brand-100 hover:shadow-lg transition-shadow">
-                            <!-- New Badge -->
-                            <div class="absolute -top-3 -right-3 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md animate-pulse">NEW</div>
-                            
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
-                                <h4 class="text-lg font-bold text-gray-800">七月：【異象傳承】從校園走禱到裝備扎根</h4>
-                                <span class="text-sm font-medium text-brand-600 bg-brand-100 px-3 py-1 rounded-full w-fit">2026.07</span>
-                            </div>
-                            <p class="text-gray-600 mb-6 leading-relaxed text-justify">
-                                本月我與偉斌哥前往長庚大學走禱，看見老師們對校園福音工作的正面回應，雖然困難仍在，但盼望不減。此外，與南台中基督徒聚會處的植堂訓練順利結訓，牧者謙卑的榜樣激勵了我。七月下旬參加了「畢定會」傳承異象，並開始「國際聖經課程（EAST）」的裝備，同時日本短宣的籌備也進入最後倒數，求主保守我們前行的腳步！
-                            </p>
-                            <!-- 7月照片區塊：一欄三張 -->
-                            <div class="grid grid-cols-3 gap-3 md:gap-4">
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="83332.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="七月紀實照片1" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">長庚大學校園走禱</p>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="系統神學.PNG" onerror="this.src='https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="七月紀實照片2" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">課前選書：系統神學</p>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="日本短宣籌備.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="七月紀實照片3" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">日本短宣最後籌備合影</p>
                                 </div>
                             </div>
                         </div>
@@ -442,91 +436,102 @@
                             年度階段性事工需求
                         </h4>
                         <div class="space-y-3 text-sm text-brand-700">
-                            <!-- 新增打勾 Icon -->
+                            <!-- 已達標加上打勾 Icon -->
                             <div class="flex justify-between items-center border-b border-brand-200/50 pb-2">
                                 <span class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                    <span class="text-green-500 font-bold">✅</span>
                                     國際聖經課程學費
                                 </span>
                                 <span class="font-bold">NT$ 6,000</span>
                             </div>
                             <div class="flex justify-between items-center border-b border-brand-200/50 pb-2">
                                 <span class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                    <span class="text-green-500 font-bold">✅</span>
                                     日本東京短宣
                                 </span>
                                 <span class="font-bold">NT$ 60,000</span>
                             </div>
                             <div class="flex justify-between items-center border-b border-brand-200/50 pb-2">
                                 <span class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                    <span class="text-green-500 font-bold">✅</span>
                                     東亞同工大會
                                 </span>
                                 <span class="font-bold">NT$ 20,000</span>
                             </div>
-                            <div class="flex justify-between items-center">
+                            <div class="flex justify-between items-center border-b border-brand-200/50 pb-2">
                                 <span class="flex items-center gap-2">
-                                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                    <span class="text-green-500 font-bold">✅</span>
                                     異象之旅
                                 </span>
                                 <span class="font-bold">NT$ 22,000</span>
+                            </div>
+                             <div class="flex justify-between items-center">
+                                <span class="flex items-center gap-2">
+                                    <span class="text-green-500 font-bold">✅</span>
+                                    澳門華人轉化禱告營會
+                                </span>
+                                <span class="font-bold">NT$ 10,000</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Column: Monthly Progress (100% 達標版) -->
-                <div class="w-full lg:w-1/2 bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col justify-center relative overflow-hidden">
-                    <!-- 撒花特效底圖 (可選) -->
+                <!-- Right Column: Monthly Progress (水杯/水井滿溢版) -->
+                <div class="w-full lg:w-1/2 bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col items-center justify-center relative overflow-hidden">
+                    <!-- 撒花特效底圖 -->
                     <div class="absolute -right-10 -top-10 text-9xl opacity-5 pointer-events-none">🎉</div>
                     
-                    <div class="flex items-end justify-between mb-2 relative z-10">
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-800">每月經常費認獻進度</h3>
-                            <p class="text-sm font-bold text-green-600 mt-1 flex items-center gap-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                感謝神！已順利達標
-                            </p>
-                        </div>
-                        <span class="text-4xl font-black text-green-500">100<span class="text-xl">%</span></span>
+                    <div class="text-center mb-8 relative z-10">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">每月經常費認獻</h3>
+                        <p class="text-sm font-bold text-green-600 bg-green-50 px-4 py-1.5 rounded-full inline-flex items-center gap-1.5 border border-green-200 shadow-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            感謝神！恩典滿溢，已順利達標
+                        </p>
                     </div>
-                    <div class="w-full bg-gray-100 rounded-full h-5 mb-8 overflow-hidden relative z-10">
-                        <div class="bg-gradient-to-r from-green-400 to-green-500 h-full rounded-full transition-all duration-1000 ease-out" style="width: 100%"></div>
+
+                    <!-- 創意水杯/井水動畫 (100% 滿水位) -->
+                    <div class="relative w-48 h-48 md:w-56 md:h-56 mb-10 z-10">
+                        <!-- 杯子外框 -->
+                        <div class="absolute inset-0 border-4 border-gray-200 rounded-[2rem] rounded-tl-sm rounded-tr-sm overflow-hidden bg-gray-50 shadow-inner">
+                            <!-- 水體 (使用偽元素製造波浪效果) -->
+                            <!-- 水位設定在 top: 0% 表示 100% 滿 -->
+                            <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-green-400 to-emerald-300 opacity-90">
+                                <!-- 波浪 1 -->
+                                <div class="absolute -top-6 left-0 w-[400%] h-12 bg-white/20 rounded-full animate-wave-slow" style="filter: blur(2px);"></div>
+                                <!-- 波浪 2 -->
+                                <div class="absolute -top-4 left-0 w-[400%] h-10 bg-white/30 rounded-full animate-wave-fast" style="filter: blur(1px);"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- 數字覆蓋在水杯正中央 -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white drop-shadow-md">
+                            <span class="text-5xl font-black">100<span class="text-2xl">%</span></span>
+                            <span class="text-sm font-bold opacity-90 mt-1">NT$ 62,000</span>
+                        </div>
                     </div>
                     
-                    <div class="space-y-4 mb-8 relative z-10">
-                        <div class="flex justify-between items-center p-4 bg-gray-50 rounded-xl">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-gray-600">🎯</div>
-                                <span class="font-medium text-gray-700">每月生活費總需</span>
-                            </div>
-                            <span class="font-bold text-gray-800 text-lg">NT$ 62,000</span>
+                    <!-- 數據摘要 -->
+                    <div class="w-full space-y-4 mb-8 relative z-10">
+                        <div class="flex justify-between items-center p-4 bg-gray-50 rounded-xl border border-gray-100">
+                            <span class="font-medium text-gray-600">總需求</span>
+                            <span class="font-bold text-gray-800">NT$ 62,000</span>
                         </div>
                         <div class="flex justify-between items-center p-4 bg-green-50 rounded-xl border border-green-100">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-green-500">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                </div>
-                                <span class="font-medium text-green-800">已認獻金額</span>
-                            </div>
-                            <span class="font-bold text-green-700 text-lg">NT$ 62,000</span>
-                        </div>
-                        <div class="flex justify-between items-center p-5 bg-gray-50 rounded-xl border border-gray-100 relative overflow-hidden shadow-sm opacity-50">
-                            <div class="flex items-center gap-3 pl-2">
-                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-gray-400">✅</div>
-                                <span class="font-bold text-gray-500">每月尚缺額度</span>
-                            </div>
-                            <span class="font-bold text-gray-400 text-2xl">NT$ 0</span>
+                            <span class="font-medium text-green-700 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                已認獻
+                            </span>
+                            <span class="font-bold text-green-700">NT$ 62,000</span>
                         </div>
                     </div>
 
                     <!-- 達標感謝感言 -->
-                    <div class="p-5 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl text-center shadow-lg relative z-10">
+                    <div class="p-5 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl text-center shadow-lg relative z-10 w-full">
                         <h4 class="font-bold text-lg mb-2 flex justify-center items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                             充滿感恩，全數達標！
                         </h4>
-                        <p class="text-sm font-medium leading-relaxed opacity-90">
+                        <p class="text-sm font-medium leading-relaxed opacity-95 text-justify">
                             感謝每一位弟兄姊妹的慷慨解囊與迫切代禱！因著您們的愛心支持，目前的經常費需求已全數補足。未來的日子，懇請您們繼續用禱告托住我們，成為我們在校園前線最堅強的後盾！願神大大賜福與您！
                         </p>
                     </div>
@@ -559,7 +564,7 @@
                 「看哪，我必親自尋找我的羊，將牠們尋見。」（以西結書34:11）
             </p>
             
-            <!-- Contact Info (Replaced Social Media) -->
+            <!-- Contact Info -->
             <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 mb-10">
                 <a href="mailto:george.kang@tccc.org.tw" class="flex items-center justify-center gap-2 text-gray-400 hover:text-white transition-colors">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
