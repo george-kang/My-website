@@ -270,54 +270,59 @@
 
     <!-- Prayer Letters Section (代禱信摘要 - 近三個月) -->
     <section id="newsletters" class="py-20 px-6 bg-white">
-        <div class="max-w-4xl mx-auto">
+        <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">代禱信摘要</h2>
                 <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full"></div>
                 <p class="mt-6 text-gray-600">邀請您透過閱讀，參與在我的每一段屬靈旅程中。</p>
             </div>
 
-            <!-- Last 3 Months Group (順序：8月 -> 7月 -> 6月) -->
+            <!-- Last 3 Months Group (以圖為主，字為輔的新排版) -->
             <div>
                 <h3 class="text-xl md:text-2xl font-bold text-brand-600 mb-8 flex items-center gap-4">
                     近三個月動態 <span class="flex-grow h-px bg-gray-200"></span>
                 </h3>
-                <div class="space-y-8 pl-4 md:pl-8 border-l-2 border-brand-200 ml-2 md:ml-0">
+                <div class="space-y-10 pl-4 md:pl-8 border-l-2 border-brand-200 ml-2 md:ml-0">
                     
                     <!-- Month 1 (8月 - 最新) -->
                     <div class="relative">
                         <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-500 ring-4 ring-white shadow-sm border border-white"></div>
-                        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border-2 border-brand-100 hover:shadow-lg transition-shadow">
+                        <div class="bg-white p-5 md:p-6 rounded-2xl shadow-md border-2 border-brand-100 hover:shadow-xl transition-all duration-300">
                             <!-- New Badge -->
-                            <div class="absolute -top-3 -right-3 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md animate-pulse">NEW</div>
+                            <div class="absolute -top-3 -right-3 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md animate-pulse z-10">NEW</div>
                             
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
-                                <h4 class="text-lg font-bold text-gray-800">八月：【恩典滿溢】神學裝備與風雨無阻的日本短宣</h4>
-                                <span class="text-sm font-medium text-brand-600 bg-brand-100 px-3 py-1 rounded-full w-fit">2026.08</span>
-                            </div>
-                            <p class="text-gray-600 mb-6 leading-relaxed text-justify">
-                                這個月充滿挑戰與恩典！我參與了密集的聖經課程，在華神美雅姐幽默生動的教導下，深奧的系統神學變得有趣，甚至用網路迷因發表報告獲得肯定。緊接著，在颱風天出發的日本短宣經歷了神奇的平靜，我們接觸了許多社青與孩子。在《台灣之夜》佈道會上，我首次上台分享信息並帶領決志，更看見慕道友世隆因著信仰前輩的見證而決志信主，這一切讓我更深體會神的大能與慈愛。
-                            </p>
-                            <!-- 8月照片區塊：一欄三張 -->
-                            <div class="grid grid-cols-3 gap-3 md:gap-4">
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="88941.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="《台灣之夜》講信息" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                            <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+                                <!-- 圖片區塊 (佔比較大) -->
+                                <div class="w-full lg:w-3/5 grid grid-cols-2 gap-3 h-auto lg:h-[300px]">
+                                    <!-- 主圖 (左側大圖) -->
+                                    <div class="col-span-2 md:col-span-1 md:row-span-2 bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="88938_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="短宣隊成員大合照" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-xs text-gray-500 text-center font-medium mt-2">短宣隊成員大合照</p>
                                     </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">《台灣之夜》講信息</p>
+                                    <!-- 副圖 1 (右側上圖) -->
+                                    <div class="bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="88941.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="《台灣之夜》講信息" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-[10px] md:text-xs text-gray-500 text-center font-medium mt-1">《台灣之夜》講信息</p>
+                                    </div>
+                                    <!-- 副圖 2 (右側下圖) -->
+                                    <div class="bg-gray-50 rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="88935_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="與慕道友世隆合影" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-[10px] md:text-xs text-gray-500 text-center font-medium mt-1">與慕道友世隆(右)合影</p>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="88935_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="與慕道友世隆合影" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">與慕道友世隆(右)合影</p>
-                                </div>
-                                <!-- 取消翻轉效果 (移除 scale-x-[-1]) -->
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="88938_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="短宣隊成員大合照" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">短宣隊成員大合照</p>
+                                <!-- 文字區塊 (佔比較小) -->
+                                <div class="w-full lg:w-2/5 flex flex-col justify-center">
+                                    <span class="text-xs font-bold text-brand-600 bg-brand-100 px-3 py-1 rounded-full w-fit mb-3">2026.08</span>
+                                    <h4 class="text-xl font-bold text-gray-800 mb-4 leading-snug">【恩典滿溢】神學裝備與風雨無阻的日本短宣</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed text-justify line-clamp-6 md:line-clamp-none">
+                                        這個月充滿挑戰與恩典！我參與了密集的聖經課程，在華神美雅姐幽默生動的教導下，深奧的系統神學變得有趣。緊接著，在颱風天出發的日本短宣經歷了神奇的平靜，我們接觸了許多社青與孩子。在《台灣之夜》佈道會上，我首次上台分享信息並帶領決志，更看見慕道友世隆因著信仰前輩的見證而決志信主，這一切讓我更深體會神的大能與慈愛。
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -326,36 +331,36 @@
                     <!-- Month 2 (7月) -->
                     <div class="relative">
                         <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-400 ring-4 ring-white"></div>
-                        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
-                                <h4 class="text-lg font-bold text-gray-800">七月：【異象傳承】從校園走禱到裝備扎根</h4>
-                                <span class="text-sm font-medium text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-fit">2026.07</span>
-                            </div>
-                            <p class="text-gray-600 mb-6 leading-relaxed text-justify">
-                                本月我與偉斌哥前往長庚大學走禱，看見老師們對校園福音工作的正面回應，雖然困難仍在，但盼望不減。此外，與南台中基督徒聚會處的植堂訓練順利結訓，牧者謙卑的榜樣激勵了我。七月下旬參加了「畢定會」傳承異象，並開始「國際聖經課程（EAST）」的裝備，同時日本短宣的籌備也進入最後倒數，求主保守我們前行的腳步！
-                            </p>
-                            <!-- 7月照片區塊：修復排列與顯示 -->
-                            <div class="grid grid-cols-3 gap-3 md:gap-4">
-                                <!-- 圖1: 長庚走禱 -->
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="83332.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="長庚大學校園走禱" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                        <div class="bg-gray-50 p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
+                            <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+                                <!-- 圖片區塊 -->
+                                <div class="w-full lg:w-3/5 grid grid-cols-2 gap-3 h-auto lg:h-[300px]">
+                                    <div class="col-span-2 md:col-span-1 md:row-span-2 bg-white rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="83332.jpg" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="長庚大學校園走禱" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-xs text-gray-500 text-center font-medium mt-2">長庚大學校園走禱</p>
                                     </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">長庚大學校園走禱</p>
+                                    <div class="bg-white rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="系統神學.PNG" onerror="this.src='https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="課前選書：系統神學" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-[10px] md:text-xs text-gray-500 text-center font-medium mt-1">課前選書：系統神學</p>
+                                    </div>
+                                    <div class="bg-white rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="截圖%202026-06-14%20晚上9.03.38.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="東京短宣線上籌備會" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-[10px] md:text-xs text-gray-500 text-center font-medium mt-1">東京短宣線上籌備會</p>
+                                    </div>
                                 </div>
-                                <!-- 圖2: 課前選書 (系統神學.PNG) -->
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="系統神學.PNG" onerror="this.src='https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="課前選書：系統神學" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">課前選書：系統神學</p>
-                                </div>
-                                <!-- 圖3: 東京短宣籌備會 (截圖 2026-06-14 晚上9.03.38.jpg) -->
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="截圖%202026-06-14%20晚上9.03.38.jpg" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="東京短宣線上籌備會" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">東京短宣線上籌備會</p>
+                                <!-- 文字區塊 -->
+                                <div class="w-full lg:w-2/5 flex flex-col justify-center">
+                                    <span class="text-xs font-bold text-brand-600 bg-brand-50 border border-brand-100 px-3 py-1 rounded-full w-fit mb-3">2026.07</span>
+                                    <h4 class="text-xl font-bold text-gray-800 mb-4 leading-snug">【異象傳承】從校園走禱到裝備扎根</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed text-justify line-clamp-6 md:line-clamp-none">
+                                        本月我與偉斌哥前往長庚大學走禱，看見老師們對校園福音工作的正面回應。此外，與南台中基督徒聚會處的植堂訓練順利結訓，牧者謙卑的榜樣激勵了我。七月下旬參加了「畢定會」傳承異象，並開始「國際聖經課程（EAST）」的裝備，同時日本短宣的籌備也進入最後倒數，求主保守我們前行的腳步！
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -364,33 +369,36 @@
                     <!-- Month 3 (6月) -->
                     <div class="relative">
                         <div class="absolute -left-[23px] md:-left-[39px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-300 ring-4 ring-white"></div>
-                        <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
-                                <h4 class="text-lg font-bold text-gray-800">六月：【操練與跨越】身心靈的重塑與擴張</h4>
-                                <span class="text-sm font-medium text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-fit">2026.06</span>
-                            </div>
-                            <p class="text-gray-600 mb-6 leading-relaxed text-justify">
-                                隨著錢牧師返韓述職，這個月我接受了密集的個人成長訓練。不僅在體態上有了突破（從 XL 瘦到 L！），在讀經與時間管理上也建立起全新紀律。同時，我也積極參與泰山、五股、林口區的聯合早禱會，並拜訪馬禮遜美國學校的牧者，看見長期深耕校園帶來的福音影響力。期盼這些操練與看見，能為下半年的事工帶來嶄新的突破。
-                            </p>
-                            <!-- 6月照片區塊 -->
-                            <div class="grid grid-cols-3 gap-3 md:gap-4">
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="79244_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="六月紀實照片1" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                        <div class="bg-gray-50 p-5 md:p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
+                            <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+                                <!-- 圖片區塊 -->
+                                <div class="w-full lg:w-3/5 grid grid-cols-2 gap-3 h-auto lg:h-[300px]">
+                                    <div class="col-span-2 md:col-span-1 md:row-span-2 bg-white rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="79244_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="與陳偉斌傳道合影" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-xs text-gray-500 text-center font-medium mt-2">與陳偉斌傳道合影</p>
                                     </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">與陳偉斌傳道合影</p>
+                                    <div class="bg-white rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="79240_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="泰山五股林口聯禱會" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-[10px] md:text-xs text-gray-500 text-center font-medium mt-1">泰山五股林口聯禱會</p>
+                                    </div>
+                                    <div class="bg-white rounded-xl border border-gray-100 flex flex-col items-center justify-center p-2 group overflow-hidden">
+                                        <div class="flex-grow flex items-center justify-center w-full overflow-hidden">
+                                            <img src="79238_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1523580494112-071d4581a59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="拜訪馬禮遜美國學校" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                        </div>
+                                        <p class="text-[10px] md:text-xs text-gray-500 text-center font-medium mt-1">拜訪馬禮遜美國學校</p>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="79240_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="六月紀實照片2" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">泰山五股林口聯禱會</p>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <div class="aspect-video bg-gray-100 rounded-xl overflow-hidden border border-gray-200 relative group p-1 flex items-center justify-center">
-                                        <img src="79238_0.jpg" onerror="this.src='https://images.unsplash.com/photo-1523580494112-071d4581a59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" alt="六月紀實照片3" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                                    </div>
-                                    <p class="text-xs text-gray-500 text-center font-medium">拜訪馬禮遜美國學校</p>
+                                <!-- 文字區塊 -->
+                                <div class="w-full lg:w-2/5 flex flex-col justify-center">
+                                    <span class="text-xs font-bold text-brand-600 bg-brand-50 border border-brand-100 px-3 py-1 rounded-full w-fit mb-3">2026.06</span>
+                                    <h4 class="text-xl font-bold text-gray-800 mb-4 leading-snug">【操練與跨越】身心靈的重塑與擴張</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed text-justify line-clamp-6 md:line-clamp-none">
+                                        這個月我接受了密集的個人成長訓練。不僅在體態上有了突破，在讀經與時間管理上也建立起全新紀律。同時，我也積極參與泰山、五股、林口區的聯合早禱會，並拜訪馬禮遜美國學校的牧者，看見長期深耕校園帶來的福音影響力。期盼這些操練與看見，能為下半年的事工帶來嶄新的突破。
+                                    </p>
                                 </div>
                             </div>
                         </div>
